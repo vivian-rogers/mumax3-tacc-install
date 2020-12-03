@@ -1,0 +1,34 @@
+// geometry
+sizeX := 8000e-9
+sizeY := 50e-9
+sizeZ := 3e-9
+Nx := 4000
+Ny := 25
+ 
+setgridsize(Nx, Ny, 1)
+setcellsize(sizeX/Nx, sizeY/Ny, sizeZ)
+setGeom(rect(sizeX, sizeY))
+// set up free layer
+Ms := 1400e3
+Msat  = Ms
+Aex   = 1.3e-11
+al    := 0.007
+alpha = al
+m     = TwoDomain(1,0,0,  0,1,0,  -1,0,0)
+relax()
+// send current
+jc   := 1e11       // current density in A/m2
+J = vector(0, 0, jc)
+// set up spacer layer parameters
+lambda       = 1          // this makes term non-angle dependent
+P            := 0.32
+Pol          = P
+epsilonprime = 0.0171
+// set up fixed layer polarization
+angle := 0
+px := cos(angle * pi/180)
+py := sin(angle * pi/180)
+fixedlayer = vector(px, py, 0)
+// schedule output & run
+tableautosave(10e-12)
+run(5e-9)
