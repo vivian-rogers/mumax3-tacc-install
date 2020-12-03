@@ -9,6 +9,7 @@
 DOWNLOAD
 First, one should create a mumax folder somewhere on /work/. 
 Get the tar.gz archive direct link from the box or github or email, enter your mumax folder, and type "wget [direct link to file]"
+Can also do "module load git" and "git clone [line to this git repo]" to get the files without having to extract
 
 INSTALLATION
 To extract, type "tar -xzvf install-mumax3-tacc.tar.gz"
