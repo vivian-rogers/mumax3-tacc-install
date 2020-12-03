@@ -2,7 +2,7 @@
 printf "======================================================================\n"
 printf "                       MUMAX3 TACC INSTALLER                          \n"
 printf "======================================================================\n"
-printf "      contact me at vivian.rogers@utexas.edu if you need help!        \n"
+printf "                                                                      \n"
 
 
 printf "\nDownloading mumax3.10 with cuda 9.0 ... (this might take a second) \n"
