@@ -32,7 +32,20 @@ cp -r ./scripts ../
 cp ./test.mx3 ../systems/test/
 
 
-cd ../scripts/
+
+alias cds='cd /scratch/06640/wrogers'
+
+
+cd ../
+pre="alias cdm='cd "
+execpath=$(pwd)
+post="'"
+pathexport="$pre$execpath$post"
+echo $pathexport >> ~/.bashrc
+printf "Added 'cdm' as alias to cd into mumax dir in .bashrc\n"
+
+
+cd ./scripts/
 pre="export PATH="
 execpath=$(pwd)
 post=":\$PATH"
