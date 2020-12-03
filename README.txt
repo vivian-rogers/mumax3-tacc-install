@@ -8,12 +8,15 @@
 
 DOWNLOAD
 First, one should create a mumax folder somewhere on /work/. 
-Get the tar.gz archive direct link from the box or github or email, enter your mumax folder, and type "wget [direct link to file]"
+Get the zip archive direct link from the box or github or email, enter your mumax folder, and type "wget [direct link to file]"
 Can also do "module load git" and "git clone [line to this git repo]" to get the files without having to extract
 
 INSTALLATION
-To extract, type "tar -xzvf install-mumax3-tacc.tar.gz"
-perform "cd install-mumax3-tacc"
+ - If using zip file:
+To extract, type "unzip [filename]". 
+ - If using git: 
+module load git -> git clone [etc etc.git]
+perform "cd install-mumax3-tacc" ... or maybe it's just "cd install"
 To install, one should type (exactly) ". ./install.sh"
 there should be little else that needs to be done. This will download and extract a precompiled binary, and set up the environment to run the scripts
 this will also add the necessary paths to your .bashrc file automatically. 
