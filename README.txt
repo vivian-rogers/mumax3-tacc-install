@@ -10,6 +10,8 @@ DOWNLOAD
 First, one should create a mumax folder somewhere on /work/. 
 Get the zip archive direct link from the box or github or email, enter your mumax folder, and type "wget [direct link to file]"
 Can also do "module load git" and "git clone [line to this git repo]" to get the files without having to extract
+Maybe use git if you ever want to contribute back to this repository, and modify scripts and improve them for the group. 
+
 
 INSTALLATION
  - If using zip file:
