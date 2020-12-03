@@ -13,15 +13,17 @@ module load gcc
 module load cuda/9.0
 
 
-cp -r
-
+### staging files for copy to scratch
 FOLDERPATH=$SCRATCH/mumax3/$FOLDERNAME 
-
 mkdir $FOLDERPATH
 cp -r * $FOLDERPATH
 cd $FOLDERPATH
 
+
+### running desired calculations, postprocessing
 ibrun mumax3 $FILENAME
 
+
+### copy files back to output folder
 cd ../
 cp -r $FOLDERNAME $mumaxOutputPath
