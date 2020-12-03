@@ -25,6 +25,7 @@ cd ../
 
 printf "Creating systems, outputs, and scripts folders...\n"
 mkdir ../systems/
+mkdir $SCRATCH/mumax3
 mkdir ../systems/test/
 mkdir ../outputs/
 cp -r ./scripts ../
