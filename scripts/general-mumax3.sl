@@ -26,4 +26,4 @@ ibrun mumax3 $FILENAME
 
 ### copy files back to output folder
 cd ../
-cp -r $FOLDERNAME $mumaxOutputPath
+cp -r $FOLDERPATH $mumaxOutputPath
