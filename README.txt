@@ -40,8 +40,8 @@ the systems you want to simulate might be created in new folders in /systems/. A
 SCRIPTS
 for fun, I included one of my general-purpose plotting scripts. This will plot the first column of data against the second column of data, and can be modified. 
 I am unsure if this helps, but I hope so. Call it with "bash plot.sh". May need to module load python or module load matplotlib, it is a very old and ugly script and may need tweaking to run here. 
-Happy to help you get it working though, it is very very useful and matplotlib >>>>>> matlab for plotting. 
+Happy to help you get it working though, it is very very useful and imo matplotlib >>>>>> matlab for plotting :P
 
 
 CONTACT
-if you need any help with the install script, I can be reached at vivian.rogers@utexas.edu. Or ask Can or Sam, they are smart and they can help lol. 
+if you need any help with the install script, I can be reached at vivian.rogers@utexas.edu. Or ask Can or Sam, they could totally help. 
