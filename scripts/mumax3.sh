@@ -17,6 +17,6 @@ FOLDERNAME="$1-$DATE"
 printf "\n================ mumax3 script wrapper ==================\n"
 printf "Queueing $1 with $2 into scratch directory\n"
 printf "it will be copied back into /outputs/ when finished\n"
-sbatch --export=FOLDERNAME=$FOLDERNAME --export=FILENAME=$2 --export=mumaxOutputPath=$mumaxOutputPath $1
+sbatch --export=ALL,FOLDERNAME=$FOLDERNAME,FILENAME=$2,mumaxOutputPath=$mumaxOutputPath $1
 
 fi
