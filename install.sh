@@ -35,7 +35,6 @@ cp ./test.mx3 ../systems/test/
 
 
 
-alias cds='cd /scratch/06640/wrogers'
 
 
 cd ../
