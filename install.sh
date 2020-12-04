@@ -83,3 +83,5 @@ if (($booltest == 1 )); then
 	printf "Have fun with your magnets\n"
 fi
 
+cd ../
+

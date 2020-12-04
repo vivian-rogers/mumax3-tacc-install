@@ -13,7 +13,7 @@ else
 
 
 DATE=$(date "+%H-%M_%A_%B_%d_%Y")
-FOLDERNAME="$2-$DATE"
+FOLDERNAME="$2-$1-$DATE"
 printf "\n================ mumax3 script wrapper ==================\n"
 printf "Queueing $1 with $2 into scratch directory\n"
 printf "it will be copied back into /outputs/ when finished\n"
