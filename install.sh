@@ -6,6 +6,8 @@ printf "                                                                      \n
 
 
 printf "\nDownloading mumax3.10 with cuda 9.0 ... (this might take a second) \n"
+printf "(removing it if it already exists...)\n"
+rm -r mumax3.10_linux_cuda9.0*
 wget https://mumax.ugent.be/mumax3-binaries/mumax3.10_linux_cuda9.0.tar.gz
 
 printf "Extracting downloaded files... (this might take a second)\n"
