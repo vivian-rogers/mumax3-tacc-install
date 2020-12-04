@@ -28,7 +28,7 @@ mkdir ../systems/
 mkdir $SCRATCH/mumax3
 mkdir ../systems/test/
 mkdir ../outputs/
-cp -r ./scripts ../
+#cp -r ./scripts ../
 cp ./test.mx3 ../systems/test/
 
 
@@ -45,14 +45,14 @@ echo $pathexport >> ~/.bashrc
 printf "Added 'cdm' as alias to cd into mumax dir in .bashrc\n"
 
 
-cd ./scripts/
+cd ./mumax3-tacc-install/scripts/
 pre="export PATH="
 execpath=$(pwd)
 post=":\$PATH"
 pathexport="$pre$execpath$post"
 echo $pathexport >> ~/.bashrc
 printf "Added mumax3 scripts to path in your .bashrc\n"
-
+cd ../
 
 cd ../outputs/
 pre="export mumaxOutputPath="
