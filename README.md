@@ -6,7 +6,7 @@ developed for inclab
 **DOWNLOAD**
 
 First, one should create a mumax folder somewhere on /work/. (use cdw to move to /work/).
-Perform `module load git` and `git clone [line to this git repo]` to pull these files into your directory. 
+Perform `module load git` and `git clone [link to this git repo]` to pull these files into your directory. This link can be pulled from the green button at the top right of the git page. 
 
 
 **INSTALLATION**
