@@ -37,7 +37,7 @@ The systems you want to simulate might be created in new folders in /systems/. A
 **SCRIPTS**
 
 I have included one of my general-purpose plotting scripts. This will plot the first column of data against the second column of data, and can be modified.
-Call it with `bash plot.sh`. This could be used for plotting B vs H hysteresis loops, though I am unfamiliar with the exact output format of mumax3 simulations. May need to module load python or module load matplotlib, it is a very old and ugly script and may need tweaking to run here.
+Call it with `bash plot.sh`. This could be used for plotting B vs H hysteresis loops, though I am unfamiliar with the exact output format of mumax3 simulations. May need to module load python or module load matplotlib, also it is a very old and ugly script and may need tweaking to run here.
 
 
 **CONTACT**
