@@ -14,7 +14,7 @@ Perform `module load git` and `git clone [link to this git repo]` to pull these 
 To extract, type `unzip [filename]`.
  - If using git:
     1. module load git -> git clone [https://etc etc.git]
-    2. perform `cd install-mumax3-tacc` ... 
+    2. perform `cd install-mumax3-tacc` 
     3. To install, one should type (exactly) `. ./install.sh`
     4. There should be little else that needs to be done. This will download and extract a precompiled binary, and set up the environment to run the scripts.
     5. This will also add the necessary paths to your .bashrc file automatically.
