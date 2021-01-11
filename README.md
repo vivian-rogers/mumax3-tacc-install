@@ -5,18 +5,16 @@ developed for inclab
 
 **DOWNLOAD**
 
-First, one should create a mumax folder somewhere on /work/.
-Get the zip archive direct link from the box or github or email, enter your mumax folder, and type `wget [direct link to file]`.
-Can also do `module load git` and `git clone [line to this git repo]` to get the files without having to extract.
-Maybe use git if you ever want to contribute back to this repository, and modify scripts and improve them for the group.
+First, one should create a mumax folder somewhere on /work/. (use cdw to move to /work/).
+Perform `module load git` and `git clone [line to this git repo]` to pull these files into your directory. 
 
 
 **INSTALLATION**
  - If using zip file:
 To extract, type `unzip [filename]`.
  - If using git:
-    1. module load git -> git clone [etc etc.git]
-    2. perform `cd install-mumax3-tacc` ... or maybe it's just `cd install`
+    1. module load git -> git clone [https://etc etc.git]
+    2. perform `cd install-mumax3-tacc` ... 
     3. To install, one should type (exactly) `. ./install.sh`
     4. There should be little else that needs to be done. This will download and extract a precompiled binary, and set up the environment to run the scripts.
     5. This will also add the necessary paths to your .bashrc file automatically.
@@ -38,11 +36,10 @@ The systems you want to simulate might be created in new folders in /systems/. A
 
 **SCRIPTS**
 
-For fun, I included one of my general-purpose plotting scripts. This will plot the first column of data against the second column of data, and can be modified.
-I am unsure if this helps, but I hope so. Call it with `bash plot.sh`. May need to module load python or module load matplotlib, it is a very old and ugly script and may need tweaking to run here.
-Happy to help you get it working though, it is very very useful and imo matplotlib >>>>>> matlab for plotting :P
+I have included one of my general-purpose plotting scripts. This will plot the first column of data against the second column of data, and can be modified.
+Call it with `bash plot.sh`. This could be used for plotting B vs H hysteresis loops, though I am unfamiliar with the exact output format of mumax3 simulations. May need to module load python or module load matplotlib, it is a very old and ugly script and may need tweaking to run here.
 
 
 **CONTACT**
 
-If you need any help with the install script, I can be reached at vivian.rogers@utexas.edu. Or ask Can or Sam, they could totally help.
+If you need any help with the install script, I can be reached at vivian.rogers@utexas.edu. 
