@@ -18,7 +18,7 @@ To extract, type `unzip [filename]`.
     3. To install, one should type (exactly) `. ./install.sh`
     4. There should be little else that needs to be done. This will download and extract a precompiled binary, and set up the environment to run the scripts.
     5. This will also add the necessary paths to your .bashrc file automatically.
-
+    6. EDIT THE EMAIL in the .sl script if you care to recieve notifications about your simulation. For example, I would set mine to =vivian.rogers@utexas.edu
 
 **RUNNING SIMULATIONS**
 
