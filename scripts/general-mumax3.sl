@@ -5,7 +5,7 @@
 #SBATCH -N 1         # total number of mpi tasks requested
 #SBATCH -p gpu              # Queue name
 #SBATCH -t 00:15:00       # Run time (hh:mm:ss) - 0.25 hours (max is 48 hours)
-#SBATCH --mail-user=vivian.rogers@utexas.edu    # Email notification address MAKE THIS YOURS, PLEASE
+#SBATCH --mail-user=    # Email notification address MAKE THIS YOURS, PLEASE
 #SBATCH --mail-type=ALL                  # Email at Begin/End of job  (UNCOMMENT)
 #SBATCH -A Spintronic-Computing
 
