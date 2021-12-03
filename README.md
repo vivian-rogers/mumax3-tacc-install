@@ -42,4 +42,4 @@ Call it with `bash plot.sh`. This could be used for plotting B vs H hysteresis l
 
 **CONTACT**
 
-If you need any help with the install script, I can be reached at vivian.rogers@utexas.edu. 
+If you need any help with the install script, either I or Can can be reached
