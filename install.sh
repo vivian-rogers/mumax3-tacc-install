@@ -23,7 +23,6 @@ echo "####  MUMAX ALIASES BELOW  ####" >> ~/.bashrc
 echo $pathexport >> ~/.bashrc 
 source ~/.bashrc
 printf "Added mumax3 executables to path in your .bashrc\n"
-cd ../
 
 printf "Creating systems, outputs, and scripts folders...\n"
 mkdir ../systems/
