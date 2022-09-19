@@ -5,16 +5,17 @@ printf "======================================================================\n
 printf "                                                                      \n"
 
 
-printf "\nDownloading mumax3.10 with cuda 9.0 ... (this might take a second) \n"
+printf "\nDownloading mumax3.10 with cuda 11.0 ... (this might take a second) \n"
 printf "(removing it if it already exists...)\n"
-rm -r mumax3.10_linux_cuda9.0*
-wget https://mumax.ugent.be/mumax3-binaries/mumax3.10_linux_cuda9.0.tar.gz
+rm -r mumax3.10_linux_cuda11.0*
+wget https://mumax.ugent.be/mumax3-binaries/mumax3.10_linux_cuda11.0.tar.gz
 
 printf "Extracting downloaded files... (this might take a second)\n"
-tar -xvzf mumax3.10_linux_cuda9.0.tar.gz
+tar -xvzf mumax3.10_linux_cuda11.0.tar.gz
 
+mm3path=$(pwd)
 
-cd mumax3.10_linux_cuda9.0
+cd mumax3.10_linux_cuda11.0
 pre="export PATH="
 execpath=$(pwd)
 post=":\$PATH"
@@ -25,27 +26,27 @@ source ~/.bashrc
 printf "Added mumax3 executables to path in your .bashrc\n"
 
 printf "Creating systems, outputs, and scripts folders...\n"
-mkdir ../systems/
+mkdir $mm3path/systems/
 mkdir $SCRATCH/mumax3
-mkdir ../systems/test/
-mkdir ../outputs/
+mkdir $mm3path/systems/test/
+mkdir $mm3path/outputs/
 #cp -r ./scripts ../
-cp ./test.mx3 ../systems/test/
+cp $mm3path/test.mx3 $mm3path/systems/test/
 
 
 
 
 
-cd ../
+cd $mm3path
 pre="alias cdm='cd "
 execpath=$(pwd)
 post="'"
-pathexport="$pre$execpath$post"
+pathexport="$pre$mm3path$post"
 echo $pathexport >> ~/.bashrc
 printf "Added 'cdm' as alias to cd into mumax dir in .bashrc\n"
 
 
-cd ./mumax3-tacc-install/scripts/
+cd $mm3path/scripts/
 pre="export PATH="
 execpath=$(pwd)
 post=":\$PATH"
@@ -54,7 +55,7 @@ echo $pathexport >> ~/.bashrc
 printf "Added mumax3 scripts to path in your .bashrc\n"
 cd ../
 
-cd ../outputs/
+cd $mm3path/outputs/
 pre="export mumaxOutputPath="
 execpath=$(pwd)
 pwd
@@ -63,6 +64,8 @@ echo $pathexport2 >> ~/.bashrc
 printf "Added mumax3 output path as mumaxOutputPath in your .bashrc\n"
 source ~/.bashrc
 printf "Applied source to your .bashrc\n"
+printf "one final thing... you should edit the general-mumax3.sl SLURM file.\n Edit to include your email and TACC allocation!"
+nano $mm3path/scripts/general-mumax3.sl
 printf "Install complete!\n"
 
 printf "\nWould you like to queue a test simulation? ( 1 for yes, 0 for no): "
@@ -71,7 +74,7 @@ read booltest
 if (($booltest == 1 )); then
 	printf "\n=========== RUNNING TEST CODE ===========\n"
         printf "    cd-ing into /systems/test... \n\n"
-	cd ../systems/test/
+	cd $mm3path/systems/test/
         printf "    list files in directory with 'ls -lt': "
         ls -lt
 	printf "\n    typing 'bash mumax3.sh general-mumax3.sl test.mx3'\n"
