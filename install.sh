@@ -90,7 +90,7 @@ if (($booltest == 1 )); then
 	printf "    (after which the results will be copied back into /outputs/ )\n"
         bash mumax3.sh general-mumax3.sl test.mx3
 	printf "\n\nCongrats! if all of that worked, then you can go make your own systems now and run them :)\n"
-	printf "You can access the mumax3 folder by going to \"cdm\" and cd'ing into /systems/, where you might store your .mx3 files"
+	printf "You can access the mumax3 folder by going to \"cdm\" and cd'ing into /systems/, where you might store your .mx3 files\n"
 	printf "Go grab some $snack and simulate your micromagnetics.\n"
 fi
 
