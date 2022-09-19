@@ -64,11 +64,15 @@ echo $pathexport2 >> ~/.bashrc
 printf "Added mumax3 output path as mumaxOutputPath in your .bashrc\n"
 source ~/.bashrc
 printf "Applied source to your .bashrc\n"
+
+printf "\n\n=============== Automated install over =================\n\n"
+
+
 printf "one final thing... you should edit the general-mumax3.sl SLURM file.\n"
 printf "Edit to include your email and TACC allocation!\n"
 printf "(i.e., change the --user.email and -A flags so you can get notifs and run simulations.)\n"
 printf "Enter your favorite snack to confirm: "
-read $snack
+read snack
 nano $mm3path/scripts/general-mumax3.sl
 printf "Install complete!\n"
 
@@ -86,6 +90,7 @@ if (($booltest == 1 )); then
 	printf "    (after which the results will be copied back into /outputs/ )\n"
         bash mumax3.sh general-mumax3.sl test.mx3
 	printf "\n\nCongrats! if all of that worked, then you can go make your own systems now and run them :)\n"
+	printf "You can access the mumax3 folder by going to \"cdm\" and cd'ing into /systems/, where you might store your .mx3 files"
 	printf "Go grab some $snack and simulate your micromagnetics.\n"
 fi
 
