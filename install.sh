@@ -64,7 +64,11 @@ echo $pathexport2 >> ~/.bashrc
 printf "Added mumax3 output path as mumaxOutputPath in your .bashrc\n"
 source ~/.bashrc
 printf "Applied source to your .bashrc\n"
-printf "one final thing... you should edit the general-mumax3.sl SLURM file.\n Edit to include your email and TACC allocation!"
+printf "one final thing... you should edit the general-mumax3.sl SLURM file.\n"
+printf "Edit to include your email and TACC allocation!\n"
+printf "(i.e., change the --user.email and -A flags so you can get notifs and run simulations.)\n"
+printf "Enter your favorite snack to confirm: "
+read $snack
 nano $mm3path/scripts/general-mumax3.sl
 printf "Install complete!\n"
 
@@ -75,14 +79,14 @@ if (($booltest == 1 )); then
 	printf "\n=========== RUNNING TEST CODE ===========\n"
         printf "    cd-ing into /systems/test... \n\n"
 	cd $mm3path/systems/test/
-        printf "    list files in directory with 'ls -lt': "
+        printf "    list files in directory with 'ls -lt': \n\n"
         ls -lt
 	printf "\n    typing 'bash mumax3.sh general-mumax3.sl test.mx3'\n"
 	printf "    (this runs the wrapper script 'mumax3.sl' to call the slurm script 'general-mumax3.sl' with test.mx3)\n"
 	printf "    (after which the results will be copied back into /outputs/ )\n"
         bash mumax3.sh general-mumax3.sl test.mx3
-	printf "\n\nCongrats! if all of that worked, then you can go make your own systems now and run them :^)\n"
-	printf "Have fun with your magnets\n"
+	printf "\n\nCongrats! if all of that worked, then you can go make your own systems now and run them :)\n"
+	printf "Go grab some $snack and simulate your micromagnetics.\n"
 fi
 
 cd ../
